@@ -1,0 +1,35 @@
+.home{
+    display: flex;
+
+    &__pages-wrapper{
+margin-left: 50px;
+    }
+}
+
+.menu-sidebar-wrapper{
+    width: 230px;
+    height: 600px;
+    overflow: auto;
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(99, 99, 99);
+    border-radius: 20px;
+}
+
+.channel-wrapper__item{
+    width: 79vw;
+    overflow: auto;
+    display: flex;
+}

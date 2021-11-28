@@ -1,9 +1,18 @@
-import './App.scss';
+
+import "./App.scss";
+
+import Home from "./home/home";
+// import Channel from "./channel/channel";
+
+// Pages
 
 function App() {
   return (
-    <div className="App">
-     <h1>Alooo</h1>
+    <div className="app site-wrapper">
+      <div className="container">
+        <Home />
+        <div></div>
+      </div>
     </div>
   );
 }
