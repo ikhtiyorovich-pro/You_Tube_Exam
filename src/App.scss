@@ -1,32 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: sans-serif;
+body {
+    font-family: Mulish, sans-serif;
     box-sizing: border-box;
-    background-color: #17171E;
+    background-color: #17171e;
     color: white;
 }
 
-.site-wrapper{
+.site-wrapper {
     margin: 20px;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1480px;
     margin: 0 auto;
 }
 
-.app{
+.app {
     display: flex;
     height: 100%;
-  
-    &__content{
-      width: 100%;
-    }
-  }
 
-  
+    &__content {
+        width: 100%;
+    }
+}

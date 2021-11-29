@@ -1,5 +1,5 @@
-
 import "./App.scss";
+import "./assets/fonts/fonts.scss"
 
 import Home from "./home/home";
 // import Channel from "./channel/channel";

@@ -3,12 +3,12 @@ import "./sidebar.scss";
 import { Link } from "react-router-dom";
 
 // Pages
-import Gussie from "../../images/Gussie.svg"
-import Nora from "../../images/Nora.svg"
-import Belle from "../../images/Belle.svg"
-import Eunice from "../../images/Eunice.svg"
-import Emma from "../../images/Emma.svg"
-import Leah from "../../images/Leah.svg"
+import Gussie from "../../assets/images/Gussie.svg"
+import Nora from "../../assets/images/Nora.svg"
+import Belle from "../../assets/images/Belle.svg"
+import Eunice from "../../assets/images/Eunice.svg"
+import Emma from "../../assets/images/Emma.svg"
+import Leah from "../../assets/images/Leah.svg"
 
 
 function Sidebar() {

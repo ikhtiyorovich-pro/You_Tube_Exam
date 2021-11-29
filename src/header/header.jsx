@@ -2,7 +2,7 @@ import "./header.scss";
 
 
 // Images
-import UserPhoto from "../../src/images/user-photo.JPEG";
+import UserPhoto from "../../src/assets/images/user-photo.JPEG";
 import BlackLogo from "../libs/black-logo";
 import Hamburger from "../libs/hamburger-img";
 import SearchIcon from "../libs/search-icon";

@@ -1,17 +1,17 @@
 import "./menu.scss";
 
 // Images
-import MenuHomeIcon from "../../images/menu-home-icon.png";
-import MenuTrendingIcon from "../../images/menu-trending-icon.png";
-import MenuSubscriptionsIcon from "../../images/menu-subscriptions-icon.png";
-import MenuLibraryIcon from "../../images/menu-library-icon.png";
-import MenuHistoryIcon from "../../images/menu-history-icon.png";
-import MenuLaterIcon from "../../images/menu-later-icon.png";
-import MenuFavouritesIcon from "../../images/menu-favourites-icon.png";
-import MenuLikedIcon from "../../images/menu-liked-icon.png";
-import MenuMusicIcon from "../../images/menu-music-icon.png";
-import MenuGamesIcon from "../../images/menu-games-icon.png";
-import MenuMoreIcon from "../../images/menu-more-icon.png";
+import MenuHomeIcon from "../../assets/images/menu-home-icon.png";
+import MenuTrendingIcon from "../../assets/images/menu-trending-icon.png";
+import MenuSubscriptionsIcon from "../../assets/images/menu-subscriptions-icon.png";
+import MenuLibraryIcon from "../../assets/images/menu-library-icon.png";
+import MenuHistoryIcon from "../../assets/images/menu-history-icon.png";
+import MenuLaterIcon from "../../assets/images/menu-later-icon.png";
+import MenuFavouritesIcon from "../../assets/images/menu-favourites-icon.png";
+import MenuLikedIcon from "../../assets/images/menu-liked-icon.png";
+import MenuMusicIcon from "../../assets/images/menu-music-icon.png";
+import MenuGamesIcon from "../../assets/images/menu-games-icon.png";
+import MenuMoreIcon from "../../assets/images/menu-more-icon.png";
 
 function Menu() {
   return (

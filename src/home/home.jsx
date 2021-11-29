@@ -10,7 +10,7 @@ import Menu from "./menu/menu";
 import Videos from "../videos/videos";
 
 // Images
-import Gussie from "../images/Gussie.svg";
+import Gussie from "../assets/images/Gussie.svg";
 // import Creation from "../images/creation-img.png";
 import { useEffect, useState } from "react";
 
@@ -41,22 +41,39 @@ function Home() {
             <Switch>
               <Route path="/" component={Home} exact>
                 <div className="channel-wrapper">
-                  <ul className="channel-wrapper__list">
-                    <li>
+                  <div className="channel-wrapper__list">
+                    <div className="channel-wrapper__akk-item">
                       <img
                         src={Gussie}
                         alt="there is a Gussie img"
                         width="40"
                         height="40"
                       />
-                      <h2>GussieSingleton</h2>
-                    </li>
+                      <h2 className="akk-item__heading">Dollie Blair</h2>
+                    </div>
                     <ul className="channel-wrapper__item">
                       {items.map(video => (
                         <Videos key={video.id} title={video.title} />
                       ))}
                     </ul>
-                  </ul>
+                    <div className="recommended-wrapper">
+                      <h2 className="akk-item__heading">Recommended</h2>
+                    </div>
+                    <ul className="channel-wrapper__item">
+                      {items.map(video => (
+                        <Videos key={video.id} title={video.title} />
+                      ))}
+                    </ul>
+                    <div className="recommended-wrapper">
+                      <h2 className="akk-item__heading">Food & Drink</h2>
+                      <p className="akk-item__heading">Recommended channel for you</p>
+                    </div>
+                    <ul className="channel-wrapper__item">
+                      {items.map(video => (
+                        <Videos key={video.id} title={video.title} />
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </Route>
             </Switch>
