@@ -8,7 +8,7 @@ import SearchIcon from "../libs/search-icon";
 import VideoIcon from "../libs/video-icon";
 import ShapeIcon from "../libs/shape-icon";
 import CallIcon from "../libs/call-icon";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -44,13 +44,13 @@ function Header() {
               <ShapeIcon />
               <CallIcon />
             </span>
-            <img
+           <Link to="./channel"> <img
               className="user-photo"
               src={UserPhoto}
               alt=""
               width="40"
               height="40"
-            />
+            /></Link>
           </li>
         </ul>
       </div>

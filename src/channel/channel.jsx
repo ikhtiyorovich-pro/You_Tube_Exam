@@ -11,7 +11,7 @@ import Nora from "../assets/images/Nora.svg";
 import SearchIcon from "../assets/images/search-icon.svg";
 import CallIcon from "../assets/images/call-icon.svg";
 
-function Channel({ color }) {
+function Channel() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function Channel({ color }) {
       .then(data => setItems(data));
   }, []);
   return (
-    <div className={color}>
+    <div>
       <div className="channel-all-wrapper">
         <div className="channel-top-big-img"></div>
         <div>
