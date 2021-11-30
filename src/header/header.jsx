@@ -1,5 +1,6 @@
 import "./header.scss";
 
+import useThema from "../hooks/useThema";
 
 // Images
 import UserPhoto from "../../src/assets/images/user-photo.JPEG";
@@ -12,9 +13,9 @@ import CallIcon from "../libs/call-icon";
 import { NavLink } from "react-router-dom";
 
 function Header() {
-
+  const [thema, setThema] = useThema();
   return (
-    <div>
+    <div className={thema}>
       <div className="container">
         <ul className="header__list">
           <li className="header__logo-item">
@@ -22,7 +23,9 @@ function Header() {
               <Hamburger />
             </span>
             <span>
-              <NavLink to="/"><BlackLogo /></NavLink>
+              <NavLink to="/">
+                <BlackLogo />
+              </NavLink>
             </span>
           </li>
           <li className="header__search-item">
@@ -37,6 +40,13 @@ function Header() {
               </span>
             </form>
           </li>
+          <select
+            defaultValue={thema}
+            onChange={evt => setThema(evt.target.value)}
+          >
+            <option value="light">l ight</option>
+            <option value="dark">dark</option>
+          </select>
           <li className="three-icons-item">
             <span className="three-icons-span">
               <VideoIcon />

@@ -28,7 +28,7 @@ function Home() {
   }, []);
   return (
     <div>
-      <Header />
+      <Header/>
 
       <div className="home">
         <div className="change-pages two-pages-wrapper">
