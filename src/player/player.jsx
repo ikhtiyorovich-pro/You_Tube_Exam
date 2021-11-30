@@ -5,12 +5,9 @@ import { useEffect, useState } from "react";
 
 import Videos from "../videos/videos";
 import { Route, Switch } from "react-router";
-import Header from "../header/header";
 
 function PlayerPage() {
-
   const [items, setItems] = useState([]);
-
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos?albumId=1")
       .then(response => response.json())
@@ -19,14 +16,12 @@ function PlayerPage() {
 
   return (
     <div>
-      <Header />
       <div className="player-all-wrapper">
-      
         <div>
           <div className="iframe-wrapper">
             <iframe
               className="iframe-video"
-              width="1150"
+              width="940"
               height="506"
               src="https://www.youtube.com/embed/3wiYAuIaios"
               title="YouTube video player"

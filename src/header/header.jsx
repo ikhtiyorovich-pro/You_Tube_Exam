@@ -47,7 +47,7 @@ function Header() {
            <Link to="./channel"> <img
               className="user-photo"
               src={UserPhoto}
-              alt=""
+              alt="there is a user__photo"
               width="40"
               height="40"
             /></Link>

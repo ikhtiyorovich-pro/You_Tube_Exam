@@ -20,7 +20,7 @@ function Channel() {
       .then(data => setItems(data));
   }, []);
   return (
-    <div>
+    <div className="channel">
       <div className="channel-all-wrapper">
         <div className="channel-top-big-img"></div>
         <div>

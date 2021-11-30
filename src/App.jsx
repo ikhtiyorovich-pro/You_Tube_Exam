@@ -15,7 +15,7 @@ function App() {
       <div className="app site-wrapper">
         <div className="container">
           <Switch>
-            <Route path="/" component={Home} exact></Route>
+            <Route path="/" component={Home}></Route>
             <Route path="/channel" component={Channel}></Route>
             <Route path="/player" component={PlayerPage}></Route>
           </Switch>
