@@ -9,9 +9,9 @@
 
 .menu-sidebar-wrapper {
     width: 210px;
-    height: 600px;
+    height: 540px;
     overflow: auto;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +23,7 @@
 ::-webkit-scrollbar-thumb {
     background-color: red;
     border-radius: 20px;
-    
+
 }
 
 ::-webkit-scrollbar-track {
@@ -31,7 +31,7 @@
     border-radius: 20px;
 }
 
-.channel-wrapper{
+.channel-wrapper {
     height: 580px;
     overflow: auto;
 }
@@ -50,14 +50,25 @@
 .channel-wrapper__akk-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.recommended-wrapper{
+.recommended-wrapper {
     margin-top: 50px;
 }
 
 .akk-item__heading {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 10px;
+
+}
+
+.recommend-heading{
     font-family: Mulish, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -69,5 +80,35 @@
 
 }
 
+.food-drink-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 20px 0;
+}
 
+.food-drink__heading {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
 
+.food-drink__paragraph {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+    margin-left: 20px;
+
+}
+
+.settings{
+    transform: scale(1.1);
+    margin: auto;
+    margin-top: 10px;
+}

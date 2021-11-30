@@ -1,0 +1,138 @@
+.player-all-wrapper {
+    display: flex;
+    height: 590px;
+    overflow: auto;
+}
+
+.iframe-video {
+    border-radius: 10px;
+}
+
+.iframe-wrapper__heading {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.iframe-wrapper__paragraph {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #C2C2C2;
+}
+
+.player-hr {
+    background-color: rgba(216, 216, 216, 0.5);
+    ;
+    border: 1px solid rgba(216, 216, 216, 0.5);
+    ;
+}
+
+.player-bottom-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.player-bottom-wrapper__img-wrapper {
+    margin-right: 20px;
+}
+
+.player-bottom-wrapper__headings-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+.player-bottom-wrapper__heading {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #ffffff;
+}
+
+.player-bottom-wrapper__mini-paragraph {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
+.player-bottom-wrapper__span {
+    cursor: pointer;
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.player-bottom-wrapper__paragraph {
+    width: 810px;
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top: 15px;
+}
+
+.player-bottom-wrapper__show-more {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    margin-top: 15px;
+}
+
+.form-right-wrapper {
+    width: 304px;
+    height: 770px;
+    overflow: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.form-right-wrapper__heading {
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+.form-right-wrapper__videos-item {
+    width: 300px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.form-right-wrapper__video-wrapper {
+    padding: 0 10px;
+}

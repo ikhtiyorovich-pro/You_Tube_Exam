@@ -1,8 +1,10 @@
+import { Route, Switch } from "react-router";
 import "./App.scss";
-import "./assets/fonts/fonts.scss"
+import "./assets/fonts/fonts.scss";
 
 import Home from "./home/home";
-// import Channel from "./channel/channel";
+import PlayerPage from "./player/player";
+import Channel from "./channel/channel";
 
 // Pages
 
@@ -10,8 +12,11 @@ function App() {
   return (
     <div className="app site-wrapper">
       <div className="container">
-        <Home />
-        <div></div>
+        <Switch>
+          <Route path="/" component={Home}></Route>
+          <Route path="/channel" component={Channel}></Route>
+          <Route path="/player" component={PlayerPage}></Route>
+        </Switch>
       </div>
     </div>
   );

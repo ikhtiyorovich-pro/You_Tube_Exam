@@ -8,11 +8,15 @@ import Header from "../header/header";
 import Sidebar from "./sidebar/sidebar";
 import Menu from "./menu/menu";
 import Videos from "../videos/videos";
+import PlayerPage from "../player/player";
 
 // Images
 import Gussie from "../assets/images/Gussie.svg";
-// import Creation from "../images/creation-img.png";
+import FoodDrink from "../assets/images/Food-Drink-img.svg";
+import Settings from "../assets/images/settings-img.png";
+
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [items, setItems] = useState([]);
@@ -32,11 +36,20 @@ function Home() {
             <Menu />
             <Sidebar />
           </div>
+          <div className="logo-item settings">
+            <Link className="logo-item__navlink" to="/settings">
+              <img src={Settings} alt="" />
+              <h4 className="logo-item__heading">Settings</h4>
+            </Link>
+          </div>
         </div>
         <div className="home__pages-wrapper">
           <div>
             <Switch>
               <Route path="/channel" component={Channel}></Route>
+            </Switch>
+            <Switch>
+              <Route path="/player" component={PlayerPage}></Route>
             </Switch>
             <Switch>
               <Route path="/" component={Home} exact>
@@ -51,24 +64,32 @@ function Home() {
                       />
                       <h2 className="akk-item__heading">Dollie Blair</h2>
                     </div>
-                    <ul className="channel-wrapper__item">
+                   <ul className="channel-wrapper__item">
                       {items.map(video => (
                         <Videos key={video.id} title={video.title} />
                       ))}
                     </ul>
                     <div className="recommended-wrapper">
-                      <h2 className="akk-item__heading">Recommended</h2>
+                      <h2 className="recommend-heading">Recommended</h2>
                     </div>
                     <ul className="channel-wrapper__item">
                       {items.map(video => (
                         <Videos key={video.id} title={video.title} />
                       ))}
                     </ul>
-                    <div className="recommended-wrapper">
-                      <h2 className="akk-item__heading">Food & Drink</h2>
-                      <p className="akk-item__heading">Recommended channel for you</p>
+                    <div className="food-drink-wrapper">
+                      <img
+                        src={FoodDrink}
+                        alt="there is a Gussie img"
+                        width="50"
+                        height="50"
+                      />
+                      <h2 className="food-drink__heading">Food & Drink</h2>
+                      <p className="food-drink__paragraph">
+                        Recommended channel for you
+                      </p>
                     </div>
-                    <ul className="channel-wrapper__item">
+                   <ul className="channel-wrapper__item">
                       {items.map(video => (
                         <Videos key={video.id} title={video.title} />
                       ))}
@@ -77,6 +98,7 @@ function Home() {
                 </div>
               </Route>
             </Switch>
+          
           </div>
         </div>
       </div>

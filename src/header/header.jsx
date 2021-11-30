@@ -40,7 +40,8 @@ function Header() {
           <li className="three-icons-item">
             <span className="three-icons-span">
               <VideoIcon />
-              <ShapeIcon /> <CallIcon />
+              <ShapeIcon />
+              <CallIcon />
             </span>
             <img
               className="user-photo"
@@ -50,7 +51,6 @@ function Header() {
               height="40"
             />
           </li>
-      
         </ul>
       </div>
     </div>
