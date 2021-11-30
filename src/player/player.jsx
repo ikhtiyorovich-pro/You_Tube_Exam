@@ -1,14 +1,12 @@
 import "./player.scss";
 
 import FoodDrink from "../assets/images/Food-Drink-img.svg";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import Videos from "../videos/videos";
 import { Route, Switch } from "react-router";
 
-function PlayerPage({ color }) {
-
-  const [items, setItems] = useState([]);
+function PlayerPage() {
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos?albumId=1")

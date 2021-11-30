@@ -1,7 +1,5 @@
 import "./header.scss";
 
-import useThema from "../hooks/useThema";
-
 // Images
 import UserPhoto from "../../src/assets/images/user-photo.JPEG";
 import BlackLogo from "../libs/black-logo";
@@ -13,9 +11,8 @@ import CallIcon from "../libs/call-icon";
 import { NavLink } from "react-router-dom";
 
 function Header() {
-  const [thema, setThema] = useThema();
   return (
-    <div className={thema}>
+    <div>
       <div className="container">
         <ul className="header__list">
           <li className="header__logo-item">
@@ -40,13 +37,7 @@ function Header() {
               </span>
             </form>
           </li>
-          <select
-            defaultValue={thema}
-            onChange={evt => setThema(evt.target.value)}
-          >
-            <option value="light">l ight</option>
-            <option value="dark">dark</option>
-          </select>
+          
           <li className="three-icons-item">
             <span className="three-icons-span">
               <VideoIcon />
