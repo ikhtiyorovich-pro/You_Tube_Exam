@@ -56,13 +56,13 @@ function Home() {
                 <div className="channel-wrapper">
                   <div className="channel-wrapper__list">
                     <div className="channel-wrapper__akk-item">
-                      <img
+                     <Link className="woman-link" to="/channel"> <img
                         src={Gussie}
                         alt="there is a Gussie img"
                         width="40"
                         height="40"
                       />
-                      <h2 className="akk-item__heading">Dollie Blair</h2>
+                      <h2 className="akk-item__heading">Dollie Blair</h2></Link>
                     </div>
                    <ul className="channel-wrapper__item">
                       {items.map(video => (
